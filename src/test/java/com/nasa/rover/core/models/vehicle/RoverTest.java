@@ -18,19 +18,23 @@ class RoverTest {
     @BeforeEach
     void setUp() {
         terrain = new SquareTerrain(new Point(0,0), new Point(5,5));
-        rover = new Rover(terrain);
+        rover = new Rover(Position.zero(), terrain);
     }
 
     @Test
     void moveTo_should_throw_if_out_of_bounds() {
+        rover.setPosition(new Position(new Point(5, 5), Heading.NORTH));
+
         assertThrows(IndexOutOfBoundsException.class, () -> {
-            Position position = rover.moveTo(new Position(new Point(5,6), Heading.NORTH));
+            Position position = rover.move();
         });
     }
 
     @Test
     void moveTo_should_return_new_position_after_moving() {
-        Position position = rover.moveTo(new Position(new Point(5,4), Heading.NORTH));
+        rover.setPosition(new Position(new Point(5, 3), Heading.NORTH));
+
+        Position position = rover.move();
 
         assertEquals(5, position.getLocation().getX());
         assertEquals(4, position.getLocation().getY());

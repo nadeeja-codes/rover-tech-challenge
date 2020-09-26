@@ -1,5 +1,6 @@
 package com.nasa.rover.core.models;
 
+import com.nasa.rover.core.models.vehicle.TurnDirection;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -28,4 +29,27 @@ class PositionTest {
         assertEquals(Heading.WEST, newPosition.getHeading());
     }
 
+    @Test
+    void rotate_should_return_new_heading_after_turn_left() {
+        Position position = new Position(new Point(4,4), Heading.NORTH);
+
+        Position newPosition = position.rotate(TurnDirection.LEFT);
+
+        assertEquals(4, newPosition.getLocation().getX());
+        assertEquals(4, newPosition.getLocation().getY());
+        assertEquals(Heading.WEST, newPosition.getHeading());
+
+    }
+
+    @Test
+    void rotate_should_return_new_heading_after_turn_right() {
+        Position position = new Position(new Point(4,4), Heading.WEST);
+
+        Position newPosition = position.rotate(TurnDirection.RIGHT);
+
+        assertEquals(4, newPosition.getLocation().getX());
+        assertEquals(4, newPosition.getLocation().getY());
+        assertEquals(Heading.NORTH, newPosition.getHeading());
+
+    }
 }

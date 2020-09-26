@@ -1,5 +1,6 @@
 package com.nasa.rover.core.models;
 
+import com.nasa.rover.core.models.vehicle.TurnDirection;
 import lombok.Data;
 
 @Data
@@ -13,6 +14,19 @@ public class Position {
             case SOUTH: return new Position(new Point(location.getX(), location.getY() - units), heading);
             case WEST: return new Position(new Point(location.getX() - units, location.getY()), heading);
             case EAST: return new Position(new Point(location.getX() + units, location.getY()), heading);
+            default: return this;
+        }
+    }
+
+    public Position rotate(TurnDirection direction) {
+        switch (direction) {
+            case LEFT: {
+                int newHeadingValue = heading.headingValue - 90;
+                // if heading value goes negative, add 360 to match heading enum values
+                if (newHeadingValue < 0) newHeadingValue += 360;
+                return new Position(location, Heading.fromValue(newHeadingValue));
+            }
+            case RIGHT: return new Position(location, Heading.fromValue(heading.headingValue + 90));
             default: return this;
         }
     }

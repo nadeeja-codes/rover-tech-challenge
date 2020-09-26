@@ -2,19 +2,20 @@ package com.nasa.rover.core.commands;
 
 import com.nasa.rover.core.models.Heading;
 import com.nasa.rover.core.models.Position;
+import com.nasa.rover.core.models.vehicle.Movable;
 import com.nasa.rover.core.models.vehicle.Vehicle;
 
 public class MoveCommand implements Command<Position> {
 
-    private Vehicle vehicle;
+    private Movable movable;
     private Heading heading;
 
-    public MoveCommand(Vehicle vehicle) {
-        this.vehicle = vehicle;
+    public MoveCommand(Movable movable) {
+        this.movable = movable;
     }
 
     @Override
     public Position execute() {
-        return vehicle.move();
+        return movable.move();
     }
 }

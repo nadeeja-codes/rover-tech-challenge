@@ -9,6 +9,4 @@ public abstract class Vehicle {
     @Getter
     @Setter
     private Position position;
-
-    public abstract Position move();
 }

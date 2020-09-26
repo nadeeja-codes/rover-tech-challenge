@@ -4,7 +4,7 @@ import com.nasa.rover.core.models.Heading;
 import com.nasa.rover.core.models.Position;
 import com.nasa.rover.core.models.terrain.Terrain;
 
-public class Rover extends Vehicle {
+public class Rover extends Vehicle implements Movable, Turnable {
 
     private Terrain terrain;
 
@@ -23,5 +23,10 @@ public class Rover extends Vehicle {
         
         setPosition(newPosition);
         return newPosition;
+    }
+
+    @Override
+    public Position turn(TurnDirection direction) {
+        return null;
     }
 }

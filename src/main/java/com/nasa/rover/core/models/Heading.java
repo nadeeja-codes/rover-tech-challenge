@@ -24,4 +24,14 @@ public enum Heading {
         }
         return NORTH;
     }
+
+    public static Heading fromCode(String value) {
+        switch (value) {
+            case "N": return NORTH;
+            case "E": return EAST;
+            case "S": return SOUTH;
+            case "W": return WEST;
+        }
+        return NORTH;
+    }
 }

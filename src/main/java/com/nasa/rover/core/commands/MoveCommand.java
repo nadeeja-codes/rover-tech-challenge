@@ -7,8 +7,7 @@ import com.nasa.rover.core.models.vehicle.Vehicle;
 
 public class MoveCommand implements Command<Position> {
 
-    private Movable movable;
-    private Heading heading;
+    private final Movable movable;
 
     public MoveCommand(Movable movable) {
         this.movable = movable;

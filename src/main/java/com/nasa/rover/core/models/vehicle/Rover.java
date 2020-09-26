@@ -27,6 +27,9 @@ public class Rover extends Vehicle implements Movable, Turnable {
 
     @Override
     public Position turn(TurnDirection direction) {
-        return null;
+        Position newPosition = getPosition().rotate(direction);
+
+        setPosition(newPosition);
+        return newPosition;
     }
 }

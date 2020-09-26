@@ -40,4 +40,15 @@ class RoverTest {
         assertEquals(4, position.getLocation().getY());
         assertEquals(Heading.NORTH, position.getHeading());
     }
+
+    @Test
+    void rotate_should_return_new_heading_after_rotating() {
+        rover.setPosition(new Position(new Point(5, 3), Heading.NORTH));
+
+        Position position = rover.turn(TurnDirection.LEFT);
+
+        assertEquals(5, position.getLocation().getX());
+        assertEquals(3, position.getLocation().getY());
+        assertEquals(Heading.WEST, position.getHeading());
+    }
 }

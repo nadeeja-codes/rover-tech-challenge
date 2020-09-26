@@ -1,4 +1,4 @@
-package com.nasa.rover.core.models;
+package com.nasa.rover.core.models.position;
 
 import com.nasa.rover.core.models.vehicle.TurnDirection;
 import lombok.Data;

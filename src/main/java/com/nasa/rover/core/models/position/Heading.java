@@ -1,6 +1,4 @@
-package com.nasa.rover.core.models;
-
-import java.util.Arrays;
+package com.nasa.rover.core.models.position;
 
 public enum Heading {
     NORTH(0),

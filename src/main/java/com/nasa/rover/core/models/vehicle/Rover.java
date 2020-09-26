@@ -1,7 +1,6 @@
 package com.nasa.rover.core.models.vehicle;
 
-import com.nasa.rover.core.models.Heading;
-import com.nasa.rover.core.models.Position;
+import com.nasa.rover.core.models.position.Position;
 import com.nasa.rover.core.models.terrain.Terrain;
 
 public class Rover extends Vehicle implements Movable, Turnable {

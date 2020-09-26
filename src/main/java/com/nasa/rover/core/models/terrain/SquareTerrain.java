@@ -1,6 +1,6 @@
 package com.nasa.rover.core.models.terrain;
 
-import com.nasa.rover.core.models.Point;
+import com.nasa.rover.core.models.position.Point;
 
 public class SquareTerrain extends Terrain {
 

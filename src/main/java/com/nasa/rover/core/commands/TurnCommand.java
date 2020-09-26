@@ -1,6 +1,6 @@
 package com.nasa.rover.core.commands;
 
-import com.nasa.rover.core.models.Position;
+import com.nasa.rover.core.models.position.Position;
 import com.nasa.rover.core.models.vehicle.TurnDirection;
 import com.nasa.rover.core.models.vehicle.Turnable;
 

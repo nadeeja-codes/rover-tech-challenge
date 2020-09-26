@@ -1,10 +1,7 @@
 package com.nasa.rover.core;
 
 import com.nasa.rover.core.commands.Command;
-import com.nasa.rover.core.executors.CommandExecutor;
-import com.nasa.rover.core.models.Position;
-import com.nasa.rover.core.models.terrain.Terrain;
-import com.nasa.rover.core.models.vehicle.Rover;
+import com.nasa.rover.core.models.position.Position;
 import com.nasa.rover.core.models.vehicle.Vehicle;
 import lombok.Getter;
 

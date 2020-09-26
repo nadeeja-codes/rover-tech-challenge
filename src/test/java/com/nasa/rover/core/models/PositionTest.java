@@ -1,5 +1,8 @@
 package com.nasa.rover.core.models;
 
+import com.nasa.rover.core.models.position.Heading;
+import com.nasa.rover.core.models.position.Point;
+import com.nasa.rover.core.models.position.Position;
 import com.nasa.rover.core.models.vehicle.TurnDirection;
 import org.junit.jupiter.api.Test;
 

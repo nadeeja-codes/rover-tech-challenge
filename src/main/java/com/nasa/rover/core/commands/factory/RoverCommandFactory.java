@@ -3,7 +3,7 @@ package com.nasa.rover.core.commands.factory;
 import com.nasa.rover.core.commands.Command;
 import com.nasa.rover.core.commands.MoveCommand;
 import com.nasa.rover.core.commands.TurnCommand;
-import com.nasa.rover.core.models.Position;
+import com.nasa.rover.core.models.position.Position;
 import com.nasa.rover.core.models.vehicle.Rover;
 import com.nasa.rover.core.models.vehicle.TurnDirection;
 

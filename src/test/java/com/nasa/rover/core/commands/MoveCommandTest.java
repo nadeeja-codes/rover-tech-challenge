@@ -1,8 +1,8 @@
 package com.nasa.rover.core.commands;
 
-import com.nasa.rover.core.models.Heading;
-import com.nasa.rover.core.models.Point;
-import com.nasa.rover.core.models.Position;
+import com.nasa.rover.core.models.position.Heading;
+import com.nasa.rover.core.models.position.Point;
+import com.nasa.rover.core.models.position.Position;
 import com.nasa.rover.core.models.terrain.SquareTerrain;
 import com.nasa.rover.core.models.terrain.Terrain;
 import com.nasa.rover.core.models.vehicle.Rover;

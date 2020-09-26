@@ -1,4 +1,4 @@
-package com.nasa.rover.core.models;
+package com.nasa.rover.core.models.position;
 
 import lombok.Data;
 

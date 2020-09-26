@@ -2,10 +2,6 @@ package com.nasa.rover.core.input;
 
 import com.nasa.rover.core.NavigationPath;
 import com.nasa.rover.core.commands.factory.RoverCommandFactory;
-import com.nasa.rover.core.models.Point;
-import com.nasa.rover.core.models.Position;
-import com.nasa.rover.core.models.terrain.SquareTerrain;
-import com.nasa.rover.core.models.vehicle.Rover;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.nasa.rover.core.input;
+package com.nasa.rover.core.input.exceptions;
 
 public class MalformedInputException extends Exception {
     public MalformedInputException(String msg){

@@ -3,6 +3,7 @@ package com.nasa.rover.core.input;
 import com.nasa.rover.core.NavigationPath;
 import com.nasa.rover.core.commands.Command;
 import com.nasa.rover.core.commands.factory.RoverCommandFactory;
+import com.nasa.rover.core.input.exceptions.MalformedInputException;
 import com.nasa.rover.core.models.position.Heading;
 import com.nasa.rover.core.models.position.Point;
 import com.nasa.rover.core.models.position.Position;

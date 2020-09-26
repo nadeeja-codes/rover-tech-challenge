@@ -2,6 +2,7 @@ package com.nasa.rover.core.input;
 
 import com.nasa.rover.core.NavigationPath;
 import com.nasa.rover.core.commands.factory.RoverCommandFactory;
+import com.nasa.rover.core.input.exceptions.MalformedInputException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "14a7c72b-f684-4ca4-9246-b6c77351d2fc",
+		"name": "Rover",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rover Navigate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "5 5\r\n1 2 N\r\nLMLMLMLMM\r\n3 3 E\r\nMMRMMRMRRM"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rover/navigate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rover",
+						"navigate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

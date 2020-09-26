@@ -1,4 +1,4 @@
-package com.nasa.rover.core.models;
+package com.nasa.rover.core.models.position;
 
 import com.nasa.rover.core.models.position.Heading;
 import com.nasa.rover.core.models.position.Point;
@@ -53,6 +53,14 @@ class PositionTest {
         assertEquals(4, newPosition.getLocation().getX());
         assertEquals(4, newPosition.getLocation().getY());
         assertEquals(Heading.NORTH, newPosition.getHeading());
+
+    }
+
+    @Test
+    void toString_shoud_return_string_representation() {
+        Position position = new Position(new Point(4,4), Heading.WEST);
+
+        assertEquals("4 4 W", position.toString());
 
     }
 }

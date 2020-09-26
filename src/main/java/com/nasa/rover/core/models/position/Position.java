@@ -7,6 +7,10 @@ import lombok.Data;
 public class Position {
     private final Point location;
     private final Heading heading;
+    
+    public static Position zero() {
+        return new Position(new Point(0,0), Heading.NORTH);
+    }
 
     public Position transform(Heading heading, int units) {
         switch (heading) {
@@ -31,7 +35,8 @@ public class Position {
         }
     }
 
-    public static Position zero() {
-        return new Position(new Point(0,0), Heading.NORTH);
+    public String toString() {
+        return String.format("%d %d %c", location.getX(), location.getY(), Heading.toCode(heading));
     }
+
 }

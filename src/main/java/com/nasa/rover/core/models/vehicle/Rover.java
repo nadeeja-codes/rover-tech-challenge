@@ -16,8 +16,9 @@ public class Rover extends Vehicle implements Movable, Turnable {
     public Position move() {
         // Rovers are assumed to move one unit per move
         Position newPosition = getPosition().transform(getPosition().getHeading(), 1);
+
         if (!terrain.checkBounds(newPosition.getLocation())) {
-            throw new IndexOutOfBoundsException("New position is out of bounds from terrain");
+            throw new IndexOutOfBoundsException("Attempted Position is out of bounds from terrain: " + newPosition.toString());
         }
         
         setPosition(newPosition);

@@ -21,7 +21,7 @@ class RoverInputParserTest {
     @Test
     void parse_should_return_nav_paths_for_valid_input() throws MalformedInputException {
         RoverInputParser roverInputParser =
-                new RoverInputParser("5 5\n1 2 N\nLMLMLMLMM\n3 3 E\nMMRMMRMRRM", commandFactory);
+                new RoverInputParser("5 5\r\n1 2 N\r\nLMLMLMLMM\r\n3 3 E\r\nMMRMMRMRRM", commandFactory);
 
         List<NavigationPath> navigationPaths = roverInputParser.parse();
 

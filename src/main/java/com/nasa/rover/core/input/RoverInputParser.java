@@ -23,7 +23,7 @@ public class RoverInputParser implements InputParser {
     public RoverInputParser(String inputString, RoverCommandFactory commandFactory) {
         this.commandFactory = commandFactory;
 
-        lines = Arrays.asList(inputString.split("\n"));
+        lines = Arrays.asList(inputString.split("\r\n"));
     }
 
     // Parse string input into NavigationPath objects

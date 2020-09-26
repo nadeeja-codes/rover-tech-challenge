@@ -32,4 +32,14 @@ public enum Heading {
         }
         return NORTH;
     }
+
+    public static char toCode(Heading heading) {
+        switch (heading) {
+            case NORTH: return 'N';
+            case EAST: return 'E';
+            case SOUTH: return 'S';
+            case WEST: return 'W';
+        }
+        return 'N';
+    }
 }
